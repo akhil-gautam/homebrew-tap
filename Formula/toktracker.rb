@@ -1,8 +1,8 @@
 class Toktracker < Formula
   desc "Proactive insights for AI coding assistants (Claude Code, Codex, Gemini, OpenCode)"
   homepage "https://github.com/akhil-gautam/toktracker"
-  url "https://registry.npmjs.org/toktracker/-/toktracker-0.2.1.tgz"
-  sha256 "05f590ab7a8dd60a560d08dbaeb3dabc48dc13475c52b6c57051cec1e81106bd"
+  url "https://registry.npmjs.org/toktracker/-/toktracker-0.2.2.tgz"
+  sha256 "05badc76bbadd7ca30187acb37d7fe0f9c7f5b1ee1ecd8affcb738c791cbb92f"
   license "MIT"
 
   depends_on "node"
