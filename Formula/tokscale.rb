@@ -1,7 +1,7 @@
 class Tokscale < Formula
   desc "Proactive insights for AI coding assistants (Claude Code, Codex, Gemini, OpenCode)"
   homepage "https://github.com/akhil-gautam/toktracker"
-  url "https://registry.npmjs.org/tokscale/-/tokscale-0.2.0.tgz"
+  url "https://registry.npmjs.org/toktracker/-/toktracker-0.2.0.tgz"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
   license "MIT"
 
