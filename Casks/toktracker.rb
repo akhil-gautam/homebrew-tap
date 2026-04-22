@@ -1,4 +1,4 @@
-cask "tokscale" do
+cask "toktracker" do
   version "0.2.0"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
 
@@ -14,8 +14,8 @@ cask "tokscale" do
 
   zap trash: [
     "~/Library/Application Support/Tokscale",
-    "~/Library/Preferences/com.tokscale.Tokscale.plist",
-    "~/Library/Caches/com.tokscale.Tokscale",
-    "~/Library/LaunchAgents/com.tokscale.Tokscale.plist",
+    "~/Library/Preferences/com.tokscale.menubar.plist",
+    "~/Library/Caches/com.tokscale.menubar",
+    "~/Library/LaunchAgents/com.tokscale.menubar.plist",
   ]
 end

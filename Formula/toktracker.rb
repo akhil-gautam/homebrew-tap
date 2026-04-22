@@ -1,4 +1,4 @@
-class Tokscale < Formula
+class Toktracker < Formula
   desc "Proactive insights for AI coding assistants (Claude Code, Codex, Gemini, OpenCode)"
   homepage "https://github.com/akhil-gautam/toktracker"
   url "https://registry.npmjs.org/toktracker/-/toktracker-0.2.1.tgz"
@@ -13,6 +13,6 @@ class Tokscale < Formula
   end
 
   test do
-    assert_match(/\d+\.\d+\.\d+/, shell_output("#{bin}/tokscale --version"))
+    assert_match(/\d+\.\d+\.\d+/, shell_output("#{bin}/toktracker --version"))
   end
 end
