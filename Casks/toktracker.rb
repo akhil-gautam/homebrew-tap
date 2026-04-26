@@ -1,6 +1,6 @@
 cask "toktracker" do
-  version "0.1.10"
-  sha256 "0231e9a43491fb9eed5cfa9503cb980692c22dfd8f16ad7a9b99c638e7251264"
+  version "0.1.11"
+  sha256 "ca539ca37b00b7a4a75f0b885e15534080eeb00f6ac1f41b8f65da1d7b3ab09b"
 
   url "https://github.com/akhil-gautam/toktracker/releases/download/mac-v#{version}/Toktracker-#{version}.zip",
       verified: "github.com/akhil-gautam/toktracker/"
