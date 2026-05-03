@@ -1,6 +1,6 @@
 cask "bloatmac" do
-  version "0.2.4"
-  sha256 "39063b76bcb904efacd451db4c2e63c03231d301dabd2c84ab7ebaa2b1d87b4b"
+  version "0.3.0"
+  sha256 "ddae4f540865bd3cb59f6dde844a56b6a9361f65f51ce85ad2d461bf3889df97"
 
   url "https://github.com/akhil-gautam/bloat/releases/download/bloatmac-v#{version}/BloatMac-v#{version}-macos.dmg"
   name "BloatMac"
