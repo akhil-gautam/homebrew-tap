@@ -1,6 +1,6 @@
 cask "bloatmac" do
-  version "0.1.1"
-  sha256 "ac6e622ad23337fbed7c17d2d1b0df1ebf85785c0ceceecfa3ebe5e991892f28"
+  version "0.2.4"
+  sha256 "39063b76bcb904efacd451db4c2e63c03231d301dabd2c84ab7ebaa2b1d87b4b"
 
   url "https://github.com/akhil-gautam/bloat/releases/download/bloatmac-v#{version}/BloatMac-v#{version}-macos.dmg"
   name "BloatMac"
@@ -19,14 +19,6 @@ cask "bloatmac" do
   depends_on macos: ">= :tahoe"
 
   app "BloatMac.app"
-
-  # The release is ad-hoc signed (not Developer-ID notarized). Strip quarantine
-  # so Gatekeeper allows launch after install.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/BloatMac.app"],
-                   sudo: false
-  end
 
   zap trash: [
     "~/Library/Application Support/BloatMac",
