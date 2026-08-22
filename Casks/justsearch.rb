@@ -1,6 +1,6 @@
 cask "justsearch" do
-  version "0.3.0"
-  sha256 "df16d16ccfbb577b8202e4e9b76d7e3e740c00d3af47d5250fe940ab09b8865a"
+  version "0.4.0"
+  sha256 "dd64a8e18049a1e444f9cb1d20e94cccc75779711eb90cdc5de6a494e9e02adf"
 
   url "https://github.com/akhil-gautam/justsearch/releases/download/v#{version}/JustSearch-v#{version}.zip"
   name "JustSearch"
