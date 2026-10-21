@@ -1,6 +1,6 @@
 cask "omp-ui" do
   version "0.1.0"
-  sha256 "5690a892d958b52f52cd2cf8c5ff22b5958ddcf336454865df67dafea5dacbfc"
+  sha256 "a72f6f405cc86d4c27b0f395fe5f63145eed505c769d89b5b3f7865dc7726656"
 
   url "https://github.com/akhil-gautam/omp-ui/releases/download/v#{version}/omp-ui_#{version}_aarch64.dmg"
   name "omp-ui"
@@ -19,15 +19,21 @@ cask "omp-ui" do
   depends_on macos: ">= :sonoma"
 
   caveats <<~EOS
-    omp-ui is ad-hoc signed and is not Apple-notarized. On first launch, try
-    opening omp-ui, then go to System Settings > Privacy & Security, scroll to
-    Security, and click Open Anyway. Authenticate and confirm Open once.
+    omp-ui is ad-hoc signed and is not Apple-notarized, so the cask removes
+    the quarantine flag for it. macOS still may ask you to confirm the first
+    launch in System Settings > Privacy & Security.
 
     omp-ui drives the omp coding agent, which has to be installed separately
     and on your PATH.
   EOS
 
   app "omp-ui.app"
+
+  # The app is ad-hoc signed, so Gatekeeper would otherwise refuse to open
+  # it. Homebrew's download is what puts the quarantine flag on it.
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/omp-ui.app"]
+  end
 
   zap trash: [
     "~/Library/Application Support/sh.omp.ui",
