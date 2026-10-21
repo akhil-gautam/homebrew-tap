@@ -16,6 +16,7 @@ Available formulas:
 
 Available casks:
 
+- [`dockdock`](https://github.com/akhil-gautam/dockdock) — widget bar for macOS that takes the Dock's place (macOS 26+).
 - [`omp-ui`](https://github.com/akhil-gautam/omp-ui) — native macOS app for the omp coding agent: many projects open at once, each with its own agent.
 - [`toktracker`](https://github.com/akhil-gautam/toktracker) — Tokscale menubar app + dashboard for macOS.
 
@@ -36,4 +37,11 @@ brew install --cask omp-ui
 
 omp-ui drives the [omp](https://omp.sh) coding agent, which is installed
 separately and has to be on your `PATH`.
+
+## Installing DockDock
+
+```bash
+brew tap akhil-gautam/tap
+brew install --cask dockdock
+```
 
