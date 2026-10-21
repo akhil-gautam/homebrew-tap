@@ -32,7 +32,7 @@ cask "omp-ui" do
   # The app is ad-hoc signed, so Gatekeeper would otherwise refuse to open
   # it. Homebrew's download is what puts the quarantine flag on it.
   postflight_steps do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/omp-ui.app"]
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/omp-ui.app"]
   end
 
   zap trash: [
