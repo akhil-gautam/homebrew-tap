@@ -16,6 +16,7 @@ Available formulas:
 
 Available casks:
 
+- [`omp-ui`](https://github.com/akhil-gautam/omp-ui) — desktop app for the omp coding agent: many projects open at once, each with its own agent.
 - [`toktracker`](https://github.com/akhil-gautam/toktracker) — Tokscale menubar app + dashboard for macOS.
 
 ## Installing Tokscale
@@ -25,3 +26,14 @@ brew tap akhil-gautam/tap
 brew install toktracker              # CLI (TUI)
 brew install --cask toktracker       # Mac menubar app
 ```
+
+## Installing omp-ui
+
+```bash
+brew tap akhil-gautam/tap
+brew install --cask omp-ui
+```
+
+omp-ui drives the [omp](https://omp.sh) coding agent, which is installed
+separately and has to be on your `PATH`.
+
