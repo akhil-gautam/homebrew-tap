@@ -1,10 +1,10 @@
 cask "omp-ui" do
-  version "0.1.2"
-  sha256 "5c0fd14e0746249f120d999cd215a07301355da4b92d4c12576deefbd5cfdb8d"
+  version "0.2.0"
+  sha256 "d7b5e2a0f27e4b04d8468d0ccfc77b6b93b632bb4c4a981234ec4e8a0b99094b"
 
-  url "https://github.com/akhil-gautam/omp-ui/releases/download/v#{version}/omp-ui_#{version}_aarch64.dmg"
+  url "https://github.com/akhil-gautam/omp-ui/releases/download/v#{version}/omp-ui-#{version}.tar.gz"
   name "omp-ui"
-  desc "Desktop app for omp: many projects open at once, each with its own agent"
+  desc "A native macOS app for the omp coding agent"
   homepage "https://github.com/akhil-gautam/omp-ui"
 
   livecheck do
@@ -36,10 +36,8 @@ cask "omp-ui" do
   end
 
   zap trash: [
-    "~/Library/Application Support/sh.omp.ui",
+    "~/Library/Application Support/omp-ui",
     "~/Library/Preferences/sh.omp.ui.plist",
     "~/Library/Saved Application State/sh.omp.ui.savedState",
-    "~/Library/WebKit/omp-ui",
-    "~/Library/WebKit/sh.omp.ui",
   ]
 end
