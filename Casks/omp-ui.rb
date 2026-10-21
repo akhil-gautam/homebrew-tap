@@ -16,7 +16,7 @@ cask "omp-ui" do
     end
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   caveats <<~EOS
     omp-ui is ad-hoc signed and is not Apple-notarized, so the cask removes
@@ -31,7 +31,7 @@ cask "omp-ui" do
 
   # The app is ad-hoc signed, so Gatekeeper would otherwise refuse to open
   # it. Homebrew's download is what puts the quarantine flag on it.
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/omp-ui.app"]
   end
 
