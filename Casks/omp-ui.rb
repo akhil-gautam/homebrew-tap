@@ -1,6 +1,6 @@
 cask "omp-ui" do
-  version "0.2.0"
-  sha256 "d7b5e2a0f27e4b04d8468d0ccfc77b6b93b632bb4c4a981234ec4e8a0b99094b"
+  version "0.2.1"
+  sha256 "835322d2d817657bbf0a035621aceddf48182b5e9cb5b2bdc39fbf66bf5010d4"
 
   url "https://github.com/akhil-gautam/omp-ui/releases/download/v#{version}/omp-ui-#{version}.tar.gz"
   name "omp-ui"
