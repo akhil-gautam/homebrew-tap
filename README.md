@@ -16,7 +16,7 @@ Available formulas:
 
 Available casks:
 
-- [`omp-ui`](https://github.com/akhil-gautam/omp-ui) — desktop app for the omp coding agent: many projects open at once, each with its own agent.
+- [`omp-ui`](https://github.com/akhil-gautam/omp-ui) — native macOS app for the omp coding agent: many projects open at once, each with its own agent.
 - [`toktracker`](https://github.com/akhil-gautam/toktracker) — Tokscale menubar app + dashboard for macOS.
 
 ## Installing Tokscale

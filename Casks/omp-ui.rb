@@ -37,6 +37,7 @@ cask "omp-ui" do
 
   zap trash: [
     "~/Library/Application Support/omp-ui",
+    "~/Library/Application Support/sh.omp.ui",
     "~/Library/Preferences/sh.omp.ui.plist",
     "~/Library/Saved Application State/sh.omp.ui.savedState",
   ]
