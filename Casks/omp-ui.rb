@@ -1,6 +1,6 @@
 cask "omp-ui" do
-  version "0.8.0"
-  sha256 "9e31f365df3d9bbd6466ff2a7aa4b0425cbd2584715de83c770f1fe33ab8189e"
+  version "0.8.1"
+  sha256 "651db41f360c3f9be8bad92fdb5ab9e4c4277ee24bf0d65a4e4443654f2464a0"
 
   url "https://github.com/akhil-gautam/omp-ui/releases/download/v#{version}/omp-ui-#{version}.tar.gz"
   name "omp-ui"
@@ -23,8 +23,11 @@ cask "omp-ui" do
     the quarantine flag for it. macOS still may ask you to confirm the first
     launch in System Settings > Privacy & Security.
 
-    omp-ui drives the omp coding agent, which has to be installed separately
-    and on your PATH.
+    omp-ui drives the omp coding agent. If omp is not installed, the app
+    offers to install it on first launch, or install it yourself with one of:
+      curl -fsSL https://omp.sh/install | sh
+      brew install can1357/tap/omp
+      bun install -g @oh-my-pi/pi-coding-agent
   EOS
 
   app "omp-ui.app"
