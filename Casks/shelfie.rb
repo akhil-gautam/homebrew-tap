@@ -1,6 +1,6 @@
 cask "shelfie" do
-  version "0.2.0"
-  sha256 "4dc46f88b9aaf1794efa620a633289f1f1ae7d744770e53a284b26372dbe7078"
+  version "0.2.1"
+  sha256 "e0a0cfa17718a7d3c032a2acef73347fbaa1f146d681d9faebccb463a42f7dcd"
 
   url "https://github.com/akhil-gautam/shelfie/releases/download/v#{version}/Shelfie-#{version}.zip"
   name "Shelfie"
